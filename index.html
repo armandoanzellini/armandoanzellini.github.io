@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anzellini Consulting — Bioarchaeological Sciences</title>
+  <meta name="description" content="Armando Anzellini, Ph.D., RPA — Bioarchaeological consulting specializing in isotope analysis, ATR-FTIR, Raman spectroscopy, skeletal analysis, and bioarchaeological reporting." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════════════
+     NAV
+══════════════════════════════════════════════════════════ -->
+<nav id="nav">
+  <a href="#hero" class="nav-logo">
+    <!-- Mark: Concept C×A — osteon in diamond, navy palette -->
+    <svg class="mark" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs><clipPath id="navClip"><polygon points="40,5 75,40 40,75 5,40"/></clipPath></defs>
+      <polygon points="40,5 75,40 40,75 5,40" stroke="#c8a96e" stroke-width="1.3" fill="#060d16"/>
+      <polygon points="40,13 67,40 40,67 13,40" stroke="#c8a96e" stroke-width="0.4" fill="none" opacity="0.22"/>
+      <g clip-path="url(#navClip)">
+        <circle cx="40" cy="40" r="27" stroke="#2a6a8a" stroke-width="1.6" fill="none" opacity="0.9"/>
+        <circle cx="40" cy="40" r="20" stroke="#3a8a7a" stroke-width="1" fill="none" opacity="0.75"/>
+        <circle cx="40" cy="40" r="13" stroke="#4ab8e8" stroke-width="0.9" fill="none" opacity="0.65"/>
+        <circle cx="40" cy="40" r="6.5" stroke="#c8a96e" stroke-width="1" fill="none" opacity="0.9"/>
+        <circle cx="40" cy="40" r="2.6" fill="#c8a96e"/>
+        <ellipse cx="40" cy="26" rx="1.7" ry="1.1" fill="#5a8aaa" opacity="0.75"/>
+        <ellipse cx="40" cy="54" rx="1.7" ry="1.1" fill="#5a8aaa" opacity="0.75"/>
+        <ellipse cx="26" cy="40" rx="1.1" ry="1.7" fill="#5a8aaa" opacity="0.75"/>
+        <ellipse cx="54" cy="40" rx="1.1" ry="1.7" fill="#5a8aaa" opacity="0.75"/>
+        <ellipse cx="29.5" cy="29.5" rx="1.4" ry="0.9" transform="rotate(-45 29.5 29.5)" fill="#5a8aaa" opacity="0.55"/>
+        <ellipse cx="50.5" cy="50.5" rx="1.4" ry="0.9" transform="rotate(-45 50.5 50.5)" fill="#5a8aaa" opacity="0.55"/>
+        <ellipse cx="50.5" cy="29.5" rx="1.4" ry="0.9" transform="rotate(45 50.5 29.5)" fill="#5a8aaa" opacity="0.55"/>
+        <ellipse cx="29.5" cy="50.5" rx="1.4" ry="0.9" transform="rotate(45 29.5 50.5)" fill="#5a8aaa" opacity="0.55"/>
+      </g>
+      <circle cx="40" cy="5" r="2.2" fill="#c8a96e"/>
+      <circle cx="75" cy="40" r="2.2" fill="#c8a96e"/>
+      <circle cx="40" cy="75" r="2.2" fill="#c8a96e"/>
+      <circle cx="5" cy="40" r="2.2" fill="#c8a96e"/>
+    </svg>
+    <div class="nav-logo-text">
+      <span class="nav-logo-name">ANZELLINI</span>
+      <span class="nav-logo-sub">Consulting</span>
+    </div>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#methods">Methods</a></li>
+    <li><a href="#contact" class="nav-cta">Inquire</a></li>
+  </ul>
+</nav>
+
+<!-- ══════════════════════════════════════════════════════════
+     HERO
+══════════════════════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="hero-eyebrow">Bioarchaeological Sciences Consulting</p>
+
+      <h1>
+        <span class="hero-name">ANZELLINI</span><br>
+        <span class="hero-consulting">Consulting</span>
+      </h1>
+
+      <!-- Spectral bar -->
+      <div class="hero-spectra">
+        <svg viewBox="0 0 600 16" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="heroSpec" x1="0" y1="0" x2="600" y2="0" gradientUnits="userSpaceOnUse">
+              <stop offset="0%"   stop-color="#1a3a5c"/>
+              <stop offset="26%"  stop-color="#2a6a8a"/>
+              <stop offset="48%"  stop-color="#4a9a7a"/>
+              <stop offset="70%"  stop-color="#c8a040"/>
+              <stop offset="100%" stop-color="#c84040"/>
+            </linearGradient>
+          </defs>
+          <rect x="0" y="5" width="600" height="6" fill="url(#heroSpec)" opacity="0.3"/>
+          <line x1="46"  y1="0" x2="46"  y2="16" stroke="#4ab8e8" stroke-width="1.6" opacity="0.88"/>
+          <line x1="85"  y1="3" x2="85"  y2="13" stroke="#4ab8e8" stroke-width="0.9" opacity="0.5"/>
+          <line x1="132" y1="0" x2="132" y2="16" stroke="#60d4a0" stroke-width="2"   opacity="0.88"/>
+          <line x1="158" y1="4" x2="158" y2="12" stroke="#60d4a0" stroke-width="0.9" opacity="0.44"/>
+          <line x1="200" y1="1" x2="200" y2="15" stroke="#a8c870" stroke-width="1.3" opacity="0.62"/>
+          <line x1="256" y1="0" x2="256" y2="16" stroke="#e8b840" stroke-width="2"   opacity="0.88"/>
+          <line x1="285" y1="3" x2="285" y2="13" stroke="#e8b840" stroke-width="0.9" opacity="0.48"/>
+          <line x1="332" y1="1" x2="332" y2="15" stroke="#e87840" stroke-width="1.5" opacity="0.78"/>
+          <line x1="396" y1="0" x2="396" y2="16" stroke="#e84848" stroke-width="2"   opacity="0.85"/>
+          <line x1="440" y1="3" x2="440" y2="13" stroke="#e84848" stroke-width="0.8" opacity="0.42"/>
+        </svg>
+      </div>
+
+      <p class="hero-descriptor">Bioarchaeology &nbsp;·&nbsp; Isotope Analysis &nbsp;·&nbsp; FTIR/Raman &nbsp;·&nbsp; Skeletal Analysis</p>
+
+      <p class="hero-tagline">
+        Integrating skeletal biology, laboratory science, and community-engaged approaches
+        to illuminate inequality, identity, and culture from the human past.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#services" class="btn-primary">View Services</a>
+        <a href="#contact" class="btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+
+    <!-- Large mark -->
+    <div class="hero-mark">
+      <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs><clipPath id="heroMarkClip"><polygon points="40,5 75,40 40,75 5,40"/></clipPath></defs>
+        <polygon points="40,5 75,40 40,75 5,40" stroke="#c8a96e" stroke-width="0.8" fill="#060d16"/>
+        <polygon points="40,12 68,40 40,68 12,40" stroke="#c8a96e" stroke-width="0.3" fill="none" opacity="0.22"/>
+        <g clip-path="url(#heroMarkClip)">
+          <circle cx="40" cy="40" r="27" stroke="#2a6a8a" stroke-width="1" fill="none" opacity="0.9"/>
+          <circle cx="40" cy="40" r="20" stroke="#3a8a7a" stroke-width="0.7" fill="none" opacity="0.75"/>
+          <circle cx="40" cy="40" r="13" stroke="#4ab8e8" stroke-width="0.6" fill="none" opacity="0.65"/>
+          <circle cx="40" cy="40" r="6.5" stroke="#c8a96e" stroke-width="0.7" fill="none" opacity="0.9"/>
+          <circle cx="40" cy="40" r="2.6" fill="#c8a96e"/>
+          <ellipse cx="40" cy="26" rx="1.7" ry="1.1" fill="#5a8aaa" opacity="0.75"/>
+          <ellipse cx="40" cy="54" rx="1.7" ry="1.1" fill="#5a8aaa" opacity="0.75"/>
+          <ellipse cx="26" cy="40" rx="1.1" ry="1.7" fill="#5a8aaa" opacity="0.75"/>
+          <ellipse cx="54" cy="40" rx="1.1" ry="1.7" fill="#5a8aaa" opacity="0.75"/>
+          <ellipse cx="29.5" cy="29.5" rx="1.4" ry="0.9" transform="rotate(-45 29.5 29.5)" fill="#5a8aaa" opacity="0.55"/>
+          <ellipse cx="50.5" cy="50.5" rx="1.4" ry="0.9" transform="rotate(-45 50.5 50.5)" fill="#5a8aaa" opacity="0.55"/>
+          <ellipse cx="50.5" cy="29.5" rx="1.4" ry="0.9" transform="rotate(45 50.5 29.5)" fill="#5a8aaa" opacity="0.55"/>
+          <ellipse cx="29.5" cy="50.5" rx="1.4" ry="0.9" transform="rotate(45 29.5 50.5)" fill="#5a8aaa" opacity="0.55"/>
+        </g>
+        <circle cx="40" cy="5" r="1.4" fill="#c8a96e"/>
+        <circle cx="75" cy="40" r="1.4" fill="#c8a96e"/>
+        <circle cx="40" cy="75" r="1.4" fill="#c8a96e"/>
+        <circle cx="5" cy="40" r="1.4" fill="#c8a96e"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     SPECTRAL DIVIDER (reusable component)
+══════════════════════════════════════════════════════════ -->
+<div class="spectral-divider">
+  <svg viewBox="0 0 1200 18" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="divSpec1" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+        <stop offset="0%"   stop-color="#1a3a5c"/>
+        <stop offset="26%"  stop-color="#2a6a8a"/>
+        <stop offset="48%"  stop-color="#4a9a7a"/>
+        <stop offset="70%"  stop-color="#c8a040"/>
+        <stop offset="100%" stop-color="#c84040"/>
+      </linearGradient>
+    </defs>
+    <rect x="0" y="5" width="1200" height="8" fill="url(#divSpec1)" opacity="0.25"/>
+    <line x1="92"  y1="0" x2="92"  y2="18" stroke="#4ab8e8" stroke-width="2.2" opacity="0.85"/>
+    <line x1="168" y1="3" x2="168" y2="15" stroke="#4ab8e8" stroke-width="1.2" opacity="0.5"/>
+    <line x1="262" y1="0" x2="262" y2="18" stroke="#60d4a0" stroke-width="2.6" opacity="0.88"/>
+    <line x1="314" y1="4" x2="314" y2="14" stroke="#60d4a0" stroke-width="1"   opacity="0.44"/>
+    <line x1="395" y1="1" x2="395" y2="17" stroke="#a8c870" stroke-width="1.6" opacity="0.62"/>
+    <line x1="505" y1="0" x2="505" y2="18" stroke="#e8b840" stroke-width="2.6" opacity="0.88"/>
+    <line x1="562" y1="4" x2="562" y2="14" stroke="#e8b840" stroke-width="1.1" opacity="0.48"/>
+    <line x1="655" y1="1" x2="655" y2="17" stroke="#e87840" stroke-width="1.8" opacity="0.78"/>
+    <line x1="785" y1="0" x2="785" y2="18" stroke="#e84848" stroke-width="2.4" opacity="0.85"/>
+    <line x1="872" y1="3" x2="872" y2="15" stroke="#e84848" stroke-width="1"   opacity="0.42"/>
+  </svg>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════
+     ABOUT
+══════════════════════════════════════════════════════════ -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p class="eyebrow">About</p>
+        <h2 class="section-title">A Biocultural Approach to the Human Past</h2>
+        <p>
+          Anzellini Consulting offers specialized bioarchaeological and archaeological science services,
+          integrating <strong>skeletal analysis</strong>, <strong>laboratory methods</strong>, and
+          community-engaged, decolonizing frameworks to address questions of inequality, power,
+          and cultural identity in past populations.
+        </p>
+        <p>
+          Led by Armando Anzellini, Ph.D., RPA — with over 11 years of field, laboratory, and
+          teaching experience across South America and North America — the practice serves
+          academic researchers, cultural resource management firms, museums, and governmental bodies
+          requiring expert bioarchaeological analysis and reporting.
+        </p>
+        <p>
+          Current research populations include the <strong>Chachapoya of northern Peru</strong>
+          (Diablo Wasi necropolis), coastal <strong>Ecuadorian societies</strong> (Manteño,
+          Jama-Coaque, Valdivia, Las Vegas), and the medieval <strong>Székely of Transylvania</strong>.
+        </p>
+        <a href="#contact" class="btn-primary" style="margin-top:8px; display:inline-block;">Request a Consultation</a>
+      </div>
+
+      <div class="about-credentials reveal reveal-delay-2">
+        <div class="credential-item">
+          <span class="credential-label">Degree</span>
+          <span class="credential-value">Ph.D., Bioarchaeology / Anthropology</span>
+        </div>
+        <div class="credential-item">
+          <span class="credential-label">Certification</span>
+          <span class="credential-value">Registered Professional Archaeologist (RPA)</span>
+        </div>
+        <div class="credential-item">
+          <span class="credential-label">Affiliation</span>
+          <span class="credential-value">Lehigh University</span>
+        </div>
+        <div class="credential-item">
+          <span class="credential-label">Experience</span>
+          <span class="credential-value">11+ Years Field, Lab &amp; Academic</span>
+        </div>
+        <div class="credential-item">
+          <span class="credential-label">Publications</span>
+          <span class="credential-value">American Journal of Biological Anthropology; Latin American Antiquity; Book chapter forthcoming</span>
+        </div>
+        <div class="credential-item">
+          <span class="credential-label">CRM</span>
+          <span class="credential-value">Stantec (formerly Cardno)</span>
+        </div>
+        <div class="credential-item">
+          <span class="credential-label">NAGPRA</span>
+          <span class="credential-value">Repatriation Work, Lehigh University</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     SERVICES
+══════════════════════════════════════════════════════════ -->
+<section id="services">
+  <div class="services-header container">
+    <p class="eyebrow" style="color:var(--steel);">What We Offer</p>
+    <h2 class="section-title light">Services</h2>
+    <p class="lead light">Rigorous laboratory analysis and expert reporting for archaeological collections, CRM projects, and academic research.</p>
+  </div>
+
+  <div class="services-grid container">
+
+    <div class="service-card reveal">
+      <!-- Icon: FTIR waveform -->
+      <svg class="service-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="22" width="48" height="1" fill="#2a6a8a" opacity="0.4"/>
+        <polyline points="0,22 6,22 9,10 12,34 15,18 18,28 21,8 24,36 27,14 30,30 33,20 36,26 39,16 42,22 48,22"
+          stroke="#4ab8e8" stroke-width="1.4" fill="none" stroke-linejoin="round"/>
+        <line x1="24" y1="0" x2="24" y2="48" stroke="#c8a96e" stroke-width="0.6" opacity="0.4" stroke-dasharray="3,3"/>
+      </svg>
+      <p class="service-name">ATR-FTIR Spectroscopy</p>
+      <p class="service-desc">Bone diagenesis assessment, crystallinity indices, carbonate-to-phosphate ratios, and preservation quality control for isotope and DNA studies.</p>
+    </div>
+
+    <div class="service-card reveal reveal-delay-1">
+      <!-- Icon: Raman peaks -->
+      <svg class="service-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="38" width="48" height="1" fill="#3a8a7a" opacity="0.4"/>
+        <polyline points="0,38 8,38 12,38 16,38 20,20 22,38 24,38 28,4 30,38 34,38 38,38 42,38 48,38"
+          stroke="#60d4a0" stroke-width="1.4" fill="none" stroke-linejoin="round"/>
+        <line x1="28" y1="4" x2="28" y2="38" stroke="#c8a96e" stroke-width="0.6" opacity="0.5" stroke-dasharray="2,3"/>
+      </svg>
+      <p class="service-name">Raman Spectroscopy</p>
+      <p class="service-desc">Mineral phase identification, diagenesis characterization, and quality control reporting. Analysis and interpretation using R with reproducible workflows.</p>
+    </div>
+
+    <div class="service-card reveal reveal-delay-2">
+      <!-- Icon: Isotope ratios -->
+      <svg class="service-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="14" cy="28" r="8" stroke="#e8b840" stroke-width="1.2" fill="none"/>
+        <circle cx="34" cy="20" r="8" stroke="#e87840" stroke-width="1.2" fill="none"/>
+        <circle cx="14" cy="28" r="2.5" fill="#e8b840" opacity="0.8"/>
+        <circle cx="34" cy="20" r="2.5" fill="#e87840" opacity="0.8"/>
+        <line x1="19" y1="24" x2="29" y2="24" stroke="#c8a96e" stroke-width="0.8" opacity="0.5"/>
+        <text x="9" y="44" font-size="7" fill="#e8b840" opacity="0.7" font-family="monospace">δ¹³C</text>
+        <text x="29" y="44" font-size="7" fill="#e87840" opacity="0.7" font-family="monospace">δ¹⁸O</text>
+      </svg>
+      <p class="service-name">Stable Isotope Analysis</p>
+      <p class="service-desc">Carbon, nitrogen, and oxygen isotope analysis of bone collagen and mineral. Diet, mobility, and climate reconstruction from archaeological populations.</p>
+    </div>
+
+    <div class="service-card reveal">
+      <!-- Icon: Skeletal bone cross section -->
+      <svg class="service-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="24" cy="24" r="18" stroke="#8a6040" stroke-width="1.2" fill="none" opacity="0.8"/>
+        <circle cx="24" cy="24" r="13" stroke="#8a6040" stroke-width="0.8" fill="none" opacity="0.6"/>
+        <circle cx="24" cy="24" r="8"  stroke="#8a6040" stroke-width="0.7" fill="none" opacity="0.5"/>
+        <circle cx="24" cy="24" r="3"  stroke="#c8a96e" stroke-width="0.9" fill="none"/>
+        <circle cx="24" cy="24" r="1.4" fill="#c8a96e"/>
+        <ellipse cx="24" cy="14" rx="1.4" ry="0.9" fill="#5a8aaa" opacity="0.7"/>
+        <ellipse cx="24" cy="34" rx="1.4" ry="0.9" fill="#5a8aaa" opacity="0.7"/>
+        <ellipse cx="14" cy="24" rx="0.9" ry="1.4" fill="#5a8aaa" opacity="0.7"/>
+        <ellipse cx="34" cy="24" rx="0.9" ry="1.4" fill="#5a8aaa" opacity="0.7"/>
+      </svg>
+      <p class="service-name">Skeletal &amp; Bioarchaeological Analysis</p>
+      <p class="service-desc">Osteological assessment, pathology identification, age and sex estimation, trauma analysis, and commingled/mummified assemblage methods.</p>
+    </div>
+
+    <div class="service-card reveal reveal-delay-1">
+      <!-- Icon: Document/report -->
+      <svg class="service-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="8" y="4" width="32" height="40" rx="1" stroke="#c8a96e" stroke-width="1.2" fill="none"/>
+        <line x1="14" y1="14" x2="34" y2="14" stroke="#5a8aaa" stroke-width="1" opacity="0.7"/>
+        <line x1="14" y1="20" x2="34" y2="20" stroke="#5a8aaa" stroke-width="1" opacity="0.7"/>
+        <line x1="14" y1="26" x2="28" y2="26" stroke="#5a8aaa" stroke-width="1" opacity="0.7"/>
+        <line x1="14" y1="32" x2="30" y2="32" stroke="#5a8aaa" stroke-width="1" opacity="0.5"/>
+        <line x1="8" y1="8" x2="14" y2="8" stroke="#c8a96e" stroke-width="2" opacity="0.8"/>
+      </svg>
+      <p class="service-name">Technical Reporting</p>
+      <p class="service-desc">Peer-review-ready laboratory reports, CRM bioarchaeological reports, NAGPRA documentation, and data interpretation for agency and academic submissions.</p>
+    </div>
+
+    <div class="service-card reveal reveal-delay-2">
+      <!-- Icon: Map/fieldwork pin -->
+      <svg class="service-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24 6 C16 6 10 12 10 20 C10 30 24 44 24 44 C24 44 38 30 38 20 C38 12 32 6 24 6Z"
+          stroke="#c8a96e" stroke-width="1.2" fill="none"/>
+        <circle cx="24" cy="20" r="5" stroke="#4ab8e8" stroke-width="1" fill="none"/>
+        <circle cx="24" cy="20" r="2" fill="#4ab8e8" opacity="0.8"/>
+        <line x1="4" y1="42" x2="44" y2="42" stroke="#3a8a7a" stroke-width="0.8" opacity="0.4"/>
+      </svg>
+      <p class="service-name">Field &amp; CRM Consulting</p>
+      <p class="service-desc">On-site bioarchaeological consultation, excavation supervision for human remains, field methodology for commingled and fragmentary assemblages.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- SPECTRAL DIVIDER -->
+<div class="spectral-divider">
+  <svg viewBox="0 0 1200 18" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="divSpec2" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+        <stop offset="0%"   stop-color="#c84040"/>
+        <stop offset="30%"  stop-color="#c8a040"/>
+        <stop offset="52%"  stop-color="#4a9a7a"/>
+        <stop offset="74%"  stop-color="#2a6a8a"/>
+        <stop offset="100%" stop-color="#1a3a5c"/>
+      </linearGradient>
+    </defs>
+    <rect x="0" y="5" width="1200" height="8" fill="url(#divSpec2)" opacity="0.22"/>
+    <line x1="92"  y1="0" x2="92"  y2="18" stroke="#e84848" stroke-width="2.2" opacity="0.85"/>
+    <line x1="200" y1="3" x2="200" y2="15" stroke="#e84848" stroke-width="1"   opacity="0.42"/>
+    <line x1="310" y1="0" x2="310" y2="18" stroke="#e87840" stroke-width="1.8" opacity="0.78"/>
+    <line x1="432" y1="0" x2="432" y2="18" stroke="#e8b840" stroke-width="2.4" opacity="0.88"/>
+    <line x1="490" y1="4" x2="490" y2="14" stroke="#e8b840" stroke-width="1.1" opacity="0.48"/>
+    <line x1="580" y1="1" x2="580" y2="17" stroke="#a8c870" stroke-width="1.5" opacity="0.62"/>
+    <line x1="680" y1="0" x2="680" y2="18" stroke="#60d4a0" stroke-width="2.4" opacity="0.88"/>
+    <line x1="730" y1="4" x2="730" y2="14" stroke="#60d4a0" stroke-width="1"   opacity="0.44"/>
+    <line x1="840" y1="0" x2="840" y2="18" stroke="#4ab8e8" stroke-width="2.2" opacity="0.85"/>
+    <line x1="920" y1="3" x2="920" y2="15" stroke="#4ab8e8" stroke-width="1.2" opacity="0.5"/>
+  </svg>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════
+     RESEARCH
+══════════════════════════════════════════════════════════ -->
+<section id="research">
+  <div class="container">
+    <div class="research-inner">
+
+      <div class="research-sidebar reveal">
+        <p class="eyebrow">Active Research</p>
+        <h2 class="section-title">Field &amp; Population Focus</h2>
+        <p class="lead" style="margin-top:16px; font-size:15px;">
+          Research spans two primary geographic regions and three comparative populations,
+          united by biocultural questions of inequality, identity, and mortuary practice.
+        </p>
+      </div>
+
+      <div class="research-list">
+        <div class="research-item reveal">
+          <span class="research-region">Northern Peru — Amazonas</span>
+          <h3 class="research-title">Chachapoya — Diablo Wasi Necropolis</h3>
+          <p class="research-desc">Vertical cliff necropolis investigation examining stature as a socioeconomic proxy, cranial trauma at Kuelap, and methods for commingled/mummified assemblages. 4+ publications; NSF proposal in development.</p>
+        </div>
+
+        <div class="research-item reveal reveal-delay-1">
+          <span class="research-region">Coastal Ecuador — Manabí Province</span>
+          <h3 class="research-title">Manteño &amp; Jama-Coaque Frontier</h3>
+          <p class="research-desc">SAA H. &amp; T. King Grant proposal for the Puerto Cabuyal region, investigating cultural identity and frontier interaction between Manteño and Jama-Coaque traditions (~A.D. 700). Collaboration with USFQ and INPC.</p>
+        </div>
+
+        <div class="research-item reveal reveal-delay-2">
+          <span class="research-region">Coastal Ecuador — Earlier Periods</span>
+          <h3 class="research-title">Valdivia &amp; Las Vegas Cultures</h3>
+          <p class="research-desc">Analysis of fragmentary burials from the Las Vegas culture (coastal Ecuador), including flexed interments from the same feature, integrating isotope and spectroscopic data with mortuary context.</p>
+        </div>
+
+        <div class="research-item reveal">
+          <span class="research-region">Transylvania — Comparative</span>
+          <h3 class="research-title">Medieval Székely (1000–1700 C.E.)</h3>
+          <p class="research-desc">Secondary comparative population for studying mortuary practices, skeletal markers of inequality, and long-term social change. Provides a cross-cultural framework for Andean research questions.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     METHODS
+══════════════════════════════════════════════════════════ -->
+<section id="methods">
+  <!-- Background ghost mark -->
+  <div class="methods-bg-mark" aria-hidden="true">
+    <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs><clipPath id="bgClip"><polygon points="40,5 75,40 40,75 5,40"/></clipPath></defs>
+      <polygon points="40,5 75,40 40,75 5,40" stroke="#c8a96e" stroke-width="0.5" fill="none"/>
+      <g clip-path="url(#bgClip)">
+        <circle cx="40" cy="40" r="27" stroke="#c8a96e" stroke-width="0.5" fill="none"/>
+        <circle cx="40" cy="40" r="20" stroke="#c8a96e" stroke-width="0.4" fill="none"/>
+        <circle cx="40" cy="40" r="13" stroke="#c8a96e" stroke-width="0.3" fill="none"/>
+        <circle cx="40" cy="40" r="6.5" stroke="#c8a96e" stroke-width="0.4" fill="none"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="methods-inner">
+    <p class="eyebrow" style="color:var(--steel);">Laboratory Expertise</p>
+    <h2 class="section-title light">Analytical Methods</h2>
+
+    <div class="methods-grid">
+
+      <div class="method-card reveal">
+        <span class="method-tag">Spectroscopy</span>
+        <h3 class="method-name">ATR-FTIR &amp; Raman</h3>
+        <p class="method-desc">Attenuated total reflectance FTIR and Raman spectroscopy applied to archaeological bone for diagenesis assessment. Crystallinity index (CI), carbonate substitution (C/P), and amide ratios. Data processed and visualized in R with reproducible, publication-ready outputs. Workshop instructor, University of Tennessee.</p>
+      </div>
+
+      <div class="method-card reveal reveal-delay-1">
+        <span class="method-tag">Geochemistry</span>
+        <h3 class="method-name">Stable Isotope Analysis</h3>
+        <p class="method-desc">Carbon (δ¹³C), nitrogen (δ¹⁵N), and oxygen (δ¹⁸O) stable isotope analysis from bone collagen and bioapatite. Diet reconstruction, paleomobility, breastfeeding and weaning studies, and paleoclimate proxies from archaeological populations across South America.</p>
+      </div>
+
+      <div class="method-card reveal">
+        <span class="method-tag">Remote Sensing</span>
+        <h3 class="method-name">LIDAR &amp; GIS</h3>
+        <p class="method-desc">Integration of airborne and terrestrial LiDAR datasets for site detection, landscape analysis, and feature mapping in complex Andean and coastal Ecuadorian environments. Applied alongside traditional field survey and excavation methodology.</p>
+      </div>
+
+      <div class="method-card reveal reveal-delay-1">
+        <span class="method-tag">Osteology</span>
+        <h3 class="method-name">Commingled &amp; Mummified Assemblages</h3>
+        <p class="method-desc">Specialized methods for the excavation, documentation, and analysis of commingled and mummified skeletal remains. Contributing author to a forthcoming methods volume (Osterholtz &amp; Sheridan, eds.) focused on best practices for complex mortuary contexts.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SPECTRAL DIVIDER -->
+<div class="spectral-divider">
+  <svg viewBox="0 0 1200 18" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="divSpec3" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+        <stop offset="0%"   stop-color="#1a3a5c"/>
+        <stop offset="26%"  stop-color="#2a6a8a"/>
+        <stop offset="48%"  stop-color="#4a9a7a"/>
+        <stop offset="70%"  stop-color="#c8a040"/>
+        <stop offset="100%" stop-color="#c84040"/>
+      </linearGradient>
+    </defs>
+    <rect x="0" y="5" width="1200" height="8" fill="url(#divSpec3)" opacity="0.22"/>
+    <line x1="130" y1="0" x2="130" y2="18" stroke="#4ab8e8" stroke-width="2.2" opacity="0.85"/>
+    <line x1="240" y1="3" x2="240" y2="15" stroke="#4ab8e8" stroke-width="1.2" opacity="0.5"/>
+    <line x1="370" y1="0" x2="370" y2="18" stroke="#60d4a0" stroke-width="2.4" opacity="0.88"/>
+    <line x1="445" y1="4" x2="445" y2="14" stroke="#60d4a0" stroke-width="1"   opacity="0.44"/>
+    <line x1="560" y1="1" x2="560" y2="17" stroke="#a8c870" stroke-width="1.5" opacity="0.62"/>
+    <line x1="660" y1="0" x2="660" y2="18" stroke="#e8b840" stroke-width="2.6" opacity="0.88"/>
+    <line x1="735" y1="4" x2="735" y2="14" stroke="#e8b840" stroke-width="1.1" opacity="0.48"/>
+    <line x1="840" y1="1" x2="840" y2="17" stroke="#e87840" stroke-width="1.8" opacity="0.78"/>
+    <line x1="960" y1="0" x2="960" y2="18" stroke="#e84848" stroke-width="2.4" opacity="0.85"/>
+  </svg>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════
+     CONTACT
+══════════════════════════════════════════════════════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-inner">
+      <div class="contact-header reveal">
+        <p class="eyebrow">Get in Touch</p>
+        <h2 class="section-title">Inquire About Services</h2>
+        <p class="lead">Whether you need laboratory analysis, a technical report, or field consultation — reach out to discuss your project.</p>
+      </div>
+
+      <form class="contact-form reveal" action="mailto:ara622@lehigh.edu" method="get" enctype="text/plain">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="institution">Institution / Organization</label>
+          <input type="text" id="institution" name="institution" placeholder="University, agency, or firm" />
+        </div>
+
+        <div class="form-group">
+          <label for="service">Service of Interest</label>
+          <select id="service" name="service">
+            <option value="">— Select a service —</option>
+            <option>ATR-FTIR Spectroscopy</option>
+            <option>Raman Spectroscopy</option>
+            <option>Stable Isotope Analysis</option>
+            <option>Skeletal / Bioarchaeological Analysis</option>
+            <option>Technical Report Writing</option>
+            <option>Field / CRM Consultation</option>
+            <option>Multiple / Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Project Description</label>
+          <textarea id="message" name="body" placeholder="Briefly describe your project, collection, or analysis needs…"></textarea>
+        </div>
+
+        <div class="form-submit">
+          <button type="submit" class="btn-primary">Send Inquiry</button>
+        </div>
+      </form>
+
+      <div style="margin-top:40px; padding-top:24px; border-top:1px solid var(--rule);">
+        <p class="eyebrow" style="margin-bottom:8px;">Direct Contact</p>
+        <p style="font-family:var(--font-sans); font-size:13px; color:var(--text-muted);">
+          Email: <a href="mailto:ara622@lehigh.edu" style="color:var(--tan);">ara622@lehigh.edu</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <span class="footer-name">ANZELLINI</span>
+        <span class="footer-sub">Consulting</span>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#methods">Methods</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-spectra">
+      <svg viewBox="0 0 1200 12" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="footSpec" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0%"   stop-color="#1a3a5c"/>
+            <stop offset="26%"  stop-color="#2a6a8a"/>
+            <stop offset="48%"  stop-color="#4a9a7a"/>
+            <stop offset="70%"  stop-color="#c8a040"/>
+            <stop offset="100%" stop-color="#c84040"/>
+          </linearGradient>
+        </defs>
+        <rect x="0" y="3" width="1200" height="6" fill="url(#footSpec)" opacity="0.18"/>
+        <line x1="92"  y1="0" x2="92"  y2="12" stroke="#4ab8e8" stroke-width="1.4" opacity="0.65"/>
+        <line x1="262" y1="0" x2="262" y2="12" stroke="#60d4a0" stroke-width="1.6" opacity="0.65"/>
+        <line x1="505" y1="0" x2="505" y2="12" stroke="#e8b840" stroke-width="1.6" opacity="0.65"/>
+        <line x1="655" y1="0" x2="655" y2="12" stroke="#e87840" stroke-width="1.2" opacity="0.58"/>
+        <line x1="785" y1="0" x2="785" y2="12" stroke="#e84848" stroke-width="1.6" opacity="0.65"/>
+      </svg>
+    </div>
+
+    <div class="footer-bottom">
+      <span class="footer-copy">&copy; 2026 Anzellini Consulting. All rights reserved.</span>
+      <span class="footer-rpa">Ph.D. &nbsp;·&nbsp; Registered Professional Archaeologist</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ══════════════════════════════════════════════════════════
+     JAVASCRIPT — scroll reveal + nav transparency
+══════════════════════════════════════════════════════════ -->
+<script>
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach(el => observer.observe(el));
+
+  // Nav background on scroll
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 60) {
+      nav.style.background = 'rgba(8, 15, 24, 0.97)';
+    } else {
+      nav.style.background = 'rgba(15, 22, 32, 0.92)';
+    }
+  });
+</script>
+
+</body>
+</html>

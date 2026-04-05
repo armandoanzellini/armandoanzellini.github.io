@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block title %} {{title}} {% endblock %}
+
+{% block content %}
+<div class="body-text">
+    <div class="bio">
+        <span class="bio text">
+            <img loading="lazy" class="bioimage" src="{{url_for('static', filename='/assets/img/headshot.jpg')}}" alt="Headshot of Armando Anzellini">
+                <h4>Biography</h4>
+                <p>{% block bio %} {{bio}} {% endblock %}</p>
+            </img>
+        </span>
+    </div>
+    <br>
+    <hr />
+</div>
+<div class="body-text">
+	<h4>Research Statement</h4>
+		<p>{% block res_state %} {{res_state}} {% endblock %}</p>
+	<h4>Research Interests</h4>
+		<p>{% block res_int %} {{res_int}} {% endblock %}</p>
+	<br>
+	<hr />
+</div>
+<div class="body-text">
+	<h4>Academic Appointments</h4><br/>
+    	<table width="100%">
+			<tbody>
+    			<tr>
+        			<td width="20%">2022 - Present</td>
+        			<td width="80%">Assistant Professor of Anthropology, Department of Sociology and Anthropology, Lehigh University</td>
+    			</tr>
+        			<td height="15">
+    			</td>
+    			<tr>
+        			<td width="20%">2021 - 2022</td>
+        			<td width="80%">Diversity Dissertation Fellow, Department of Sociology and Anthropology, Middle Tennessee State University</td>
+    			</tr>
+    		</tbody>
+    	</table>
+    	<br>
+	<hr />
+</div>
+<div class="body-text">
+	<h4>Education</h4>
+		<table width="100%">
+			<tbody>
+    			<tr>
+        			<td width="20%">2022</td>
+        			<td width="80%"><em>Ph.D. – Biological Anthropology</em><br />
+        			Department of Anthropology, University of Tennessee, Knoxville<br />
+        			</td>
+    			</tr>
+    			<tr>
+        			<td width="20%">2016</td>
+        			<td width="80%"><em><br />
+        			M.A. – Anthropology</em><br />
+        			Department of Anthropology, University of Central Florida<br />
+        			</td>
+    			</tr>
+    			<tr>
+        			<td width="20%">2013</td>
+        			<td width="80%"><em><br />
+        			B.A. with University Honors and Honors in Major – Anthropology</em><br />
+        			Department of Anthropology, University of Central Florida<br />
+        			</td>
+    			</tr>
+			</tbody>
+		</table>
+		<br>
+	<hr />
+</div>
+{% endblock content %}

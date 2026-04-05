@@ -1,0 +1,326 @@
+/* ============================================================
+   Armando Anzellini — Academic CV Stylesheet
+   ============================================================
+ */
+:root {
+  --navy:  #1a2744;
+  --cream: #f5f0e8;
+  --gold:  #c9a84c;
+  --rule:  #d0c8b8;
+  --muted: #6b6b6b;
+  --black: #0f1620f2;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans:  'DM Sans', sans-serif;
+}
+
+* { border: 0; margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { background:var(--cream); color:#1a1a1a; font-family:var(--sans); font-weight:300; line-height:1.6;}
+
+/* ────────────────────  NAV  ──────────────────── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  display: flex;
+  flex-wrap: wrap;
+  gap:.38rem;
+  justify-content: space-between;
+  background: var(--black);
+  backdrop-filter: blur(12px);
+  border-bottom: 1.3px solid rgba(200, 169, 110, 0.15);
+  transition: background 0.3s;
+  margin: 0 auto;
+}
+
+nav, .content { display:table-row; margin:0;}
+
+.nav-logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  float:left;
+  width: 30%;
+  margin-left: .75rem;
+  margin-right: .75rem;
+  margin-bottom: .5rem;
+}
+
+.nav-logo-name {
+  font-family:var(--serif);
+  font-size:1.2rem; font-weight:600;
+  color:var(--cream); line-height:1.2;
+  letter-spacing:.01em;
+}
+
+.nav-credentials {
+  font-family:var(--serif);
+  font-size:.95rem; font-weight:400; font-style:italic;
+  color:var(--gold); letter-spacing:.04em; 
+}
+
+.nav-logo-sub {
+  font-size:.65rem; letter-spacing:.12em; text-transform:uppercase;
+  color:rgba(245,240,232,.4);
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  width: 65%;
+  column-gap: 1.5rem;
+  float: right;
+  padding-left: 1.3rem;
+  margin-top: 1.5rem; 
+  margin-bottom: .5rem;  
+}
+
+.nav-links a {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(232, 223, 200, 0.7);
+  transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(--gold); }
+
+.nav-links .nav-cta {
+  border: 1px solid rgba(200, 169, 110, 0.5);
+  padding: 8px 20px;
+  color: var(--gold);
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-links .nav-cta:hover {
+  background: var(--gold);
+  color: var(--navy);
+}
+
+nav a {
+  display:block; font-size:.73rem; letter-spacing:.1em; text-transform:uppercase;
+  color:rgba(245,240,232,.48); text-decoration:none;
+  padding:.4rem 0; border-bottom:1px solid rgba(255,255,255,.06);
+  transition:color .2s;
+}
+nav a:hover, nav a.active { color:var(--gold); }
+/* nav a:last-child { border-bottom:none; } */
+
+
+/* ──────────────────── FOOTER ──────────────────── */
+
+.footer {
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+	background: rgba(15, 22, 32, 0.92);
+    display: flex; flex-direction: column;
+	flex-wrap: wrap; /* align-items: center; */
+	padding: 1rem 2rem;
+	overflow-y: auto;
+	gap: 1.5rem;
+}
+
+.footer, .content { display:table-row }
+
+/* Name & credentials — all Cormorant Garamond */
+.footer-links {
+  display: flex; flex-wrap: wrap; gap: .38rem;
+  margin-top: 0;
+  float: left;
+  text-align: left;
+  max-width:20%;
+}
+.footer-links a {
+  font-size: .6rem; letter-spacing: .06em; text-transform: uppercase;
+  color: rgba(245,240,232,.35); border: 1px solid rgba(255,255,255,.1);
+  padding: .18rem .44rem; border-radius: 2px; text-decoration: none;
+  transition: color .2s, border-color .2s;
+}
+.footer-links a:hover { color: var(--gold); border-color: rgba(201,168,76,.5); }
+
+.footer-contact {
+  padding-left: 1.3rem;
+  padding-right: 2rem; 
+  border-left: 1px solid rgba(255,255,255,.1);
+  font-size: .65rem; color: rgba(245,240,232,.38); line-height: 1.75;
+  margin-top: 0;
+  margin-bottom: 0;
+  float: right;
+  text-align: right;
+    }
+.footer-contact a { color: var(--gold); text-decoration: none; }
+.footer-contact a:hover { text-decoration: underline; }
+
+.footer-copyright {
+  font-size: .65rem; color: rgba(245,240,232,.38); line-height: 1.75;
+  float: center;
+  text-align: center;
+  max-width: 20%; 
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.25rem
+}
+
+
+/* ──────────────────── MAIN ──────────────────── */
+#main { margin-left:10%; min-height:100vh;}
+
+#banner { width:120%; margin-left: -15%; margin-top: 0%; height:250px; background:var(--navy); overflow:hidden; position:relative; }
+#banner img { width:100%; height:100%; object-fit:cover; object-position:center 50%; display:block; opacity:.82; }
+}
+.bp-label { font-family:var(--serif); font-size:.9rem; color:rgba(245,240,232,.18); letter-spacing:.2em; text-transform:uppercase; }
+.bp-hint  { font-size:.65rem; color:rgba(201,168,76,.25); letter-spacing:.1em; }
+
+/* ──────────────────── SECTIONS ──────────────────── */
+section {
+  padding-top:2rem; padding-bottom: 3.5rem; border-bottom:1px solid var(--rule);
+  max-width:80%;
+  opacity:0; transform:translateY(14px); transition:opacity .5s, transform .5s;
+}
+section.visible { opacity:1; transform:none; }
+section:last-of-type { border-bottom:none; }
+
+/* ── HERO ── */
+#about { scroll-margin-top: 5rem;}
+#education { scroll-margin-top: 5rem;}
+#appointments { scroll-margin-top: 5rem;}
+#publications { scroll-margin-top: 5rem;}
+#presentations { scroll-margin-top: 5rem;}
+#teaching { scroll-margin-top: 5rem;}
+#grants { scroll-margin-top: 5rem;}
+#lab { scroll-margin-top: 5rem;}
+#media { scroll-margin-top: 5rem;}
+#service { scroll-margin-top: 5rem;}
+
+
+.hero-eyebrow { font-size:.66rem; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); margin-bottom:.9rem; font-weight: bold; }
+.hero-heading { font-family:var(--serif); font-size:3.8rem; font-weight:300; line-height:1.06; color:var(--navy); margin-bottom:.4rem; }
+.hero-credentials { font-family:var(--serif); font-size:1.2rem; font-style:italic; font-weight:400; color:var(--navy); margin-bottom:1.7rem; letter-spacing:.04em; }
+.bio-text { font-size:.97rem; line-height:1.85; color:#3a3a3a; margin-bottom:1.1rem; }
+
+@media (min-width: 595px) {
+ img.bioimage {
+  max-width: 25%;
+  object-fit: contain;
+  width: auto;
+  height: auto;
+  float: left;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  display: inline;
+  align-items: top;
+  }
+}
+
+.research-interests { margin-top:2rem; padding-top:1.2rem; border-top:1px solid var(--rule); clear: both;}
+.research-interests h3 { font-size:.7rem; letter-spacing:.15em; text-transform:uppercase; color:var(--gold); margin-bottom:.6rem; }
+.research-interests p {font-size:.85rem; color:#4a4a4a; line-height:1.75; }
+
+/* ── SECTION HEADER ── */
+.section-label { font-size:.63rem; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); margin-bottom:.5rem;}
+.section-title { font-family:var(--serif); font-size:2.3rem; font-weight:300; color:var(--navy); margin-bottom:2.2rem; padding-bottom:.65rem; border-bottom:1px solid var(--rule); }
+
+/* ── TWO-COL ROW ── */
+.cv-item { display:grid; grid-template-columns:60px 1fr; gap:0 1.3rem; padding:1.05rem 0; border-bottom:1px solid var(--rule); }
+.cv-item:last-child { border-bottom:none; }
+.cv-year { font-size:.78rem; color:var(--muted); padding-top:.15rem; }
+
+/* ── EDUCATION ── */
+.edu-degree { font-family:var(--serif); font-size:1.04rem; font-style:italic; color:var(--navy); margin-bottom:.14rem; }
+.edu-inst    { font-size:.82rem; color:var(--muted); }
+
+/* ── APPOINTMENTS ── */
+.appt-role  { font-family:var(--serif); font-size:1.04rem; color:var(--navy); margin-bottom:.14rem; }
+.appt-place { font-size:.82rem; color:var(--muted); }
+
+/* ── PUBLICATIONS ── */
+.pub-group { margin-bottom:2.6rem; }
+.pub-group-title { font-size:.63rem; letter-spacing:.15em; text-transform:uppercase; color:var(--muted); margin-bottom:.85rem; padding-bottom:.42rem; border-bottom:1px solid var(--rule); }
+.pub-citation { font-size:.88rem; line-height:1.7; color:#2a2a2a; }
+.pub-citation strong { color:var(--navy); font-weight:500; }
+.pub-citation em { font-style:italic; }
+.pub-link { display:inline-block; margin-top:.32rem; font-size:.68rem; letter-spacing:.08em; text-transform:uppercase; color:var(--gold); text-decoration:none; border-bottom:1px solid transparent; transition:border-color .2s; }
+.pub-link:hover { border-color:var(--gold); }
+
+/* ── PRESENTATIONS ── */
+.pres-item { display:grid; grid-template-columns:60px 1fr; gap:0 1.3rem; padding:.5rem 0; /* border-bottom:1px solid var(--rule); */ }
+.pres-citation { font-size:.88rem; line-height:1.7; color:#2a2a2a; }
+.pres-citation strong { color:var(--navy); font-weight:500; }
+.pres-citation em { font-style:italic; }
+.pres-year { font-size:.78rem; color:var(--muted); padding-top:.15rem; }
+
+/* ── TEACHING ── */
+.teaching-block { margin-bottom:1.9rem; }
+.teaching-inst { font-family:var(--serif); font-size:1.1rem; color:var(--navy); margin-bottom:.65rem; padding-bottom:.32rem; border-bottom:1px solid var(--rule); }
+.course-item { font-size:.85rem; padding:.26rem 0; border-bottom:1px solid rgba(208,200,184,.4); display:flex; gap:1rem; }
+.course-item:last-child { border-bottom:none; }
+.course-code { font-weight:500; color:var(--navy); min-width:110px; font-size:.79rem; }
+.course-name { color:#3a3a3a; }
+
+/* ── GRANTS ── */
+.grant-title  { font-family:var(--serif); font-size:1rem; font-style:italic; color:var(--navy); margin-bottom:.18rem; }
+.grant-meta   { font-size:.8rem; color:var(--muted); }
+.grant-amount { font-weight:500; color:var(--gold); }
+
+/* ── LAB ── */
+.lab-description { font-size:.97rem; line-height:1.85; color:#3a3a3a; margin-bottom:1.2rem; }
+.lab-focus-grid  { display:grid; grid-template-columns:1fr 1fr; gap:1.1rem; margin:1.8rem 0; }
+.lab-focus-card  { background:var(--navy); padding:1.3rem 1.4rem; border-left:3px solid var(--gold); }
+.lab-focus-card h3 { font-family:var(--serif); font-size:1.04rem; color:var(--cream); margin-bottom:.55rem; font-weight:400; }
+.lab-focus-card p  { font-size:.79rem; color:rgba(245,240,232,.58); line-height:1.65; }
+.lab-cta { display:inline-block; margin-top:.9rem; font-size:.73rem; letter-spacing:.1em; text-transform:uppercase; color:var(--navy); background:var(--gold); padding:.5rem 1.1rem; text-decoration:none; transition:opacity .2s; }
+.lab-cta:hover { opacity:.85; }
+
+/* ── MEDIA ── */
+.media-item { padding:1.05rem 0; border-bottom:1px solid var(--rule); }
+.media-item:last-child { border-bottom:none; }
+.media-date { font-size:.68rem; letter-spacing:.08em; color:var(--gold); text-transform:uppercase; margin-bottom:.32rem; }
+.media-desc { font-size:.88rem; line-height:1.65; color:#2a2a2a; margin-bottom:.3rem; }
+.media-desc em { font-style:italic; }
+
+/* ── SERVICE ── */
+.service-group { margin-bottom:2.4rem; }
+.service-group-title { font-size:.63rem; letter-spacing:.15em; text-transform:uppercase; color:var(--muted); margin-bottom:.85rem; padding-bottom:.42rem; border-bottom:1px solid var(--rule); }
+.service-item { display:grid; grid-template-columns:4.5rem 1fr; gap:0 1.3rem; padding:.6rem 0; /* border-bottom:1px solid rgba(208,200,184,.5); */ }
+.service-item:last-child { border-bottom:none; }
+.service-year { font-size:.77rem; color:var(--muted); padding:.2rem 0}
+.service-role { font-family:var(--serif); font-size:1rem; color:var(--navy); margin-bottom:.12rem; }
+.service-org  { font-size:.8rem; color:var(--muted); }
+
+
+
+/* ── MOBILE TOGGLE ── */
+#menu-toggle { display:none; position:fixed; top:1rem; left:1rem; z-index:200; background:var(--navy); border:none; padding:.52rem .72rem; cursor:pointer; }
+#menu-toggle span { display:block; width:20px; height:2px; background:var(--cream); margin:4px 0; }
+
+/* ──────────────────── RESPONSIVE ──────────────────── */
+/* @media (max-width:900px) {
+  #nav { transform:translateX(-100%); transition:transform .3s; }
+  #nav.open { transform:translateY(0); }
+  #main { margin-left:0; }
+  section { padding:3.5rem 2rem 2.5rem; }
+  .hero-heading { font-size:2.8rem; }
+  #menu-toggle { display:block; }
+  .lab-focus-grid { grid-template-columns:1fr; }
+} */
+@media (max-width:500px) {
+  section { padding:3rem 1.2rem 2rem; }
+  .hero-heading { font-size:2.1rem; }
+  .cv-item, .service-item { grid-template-columns:1fr; }
+  .cv-year, .service-year { color:var(--gold); font-size:.71rem; margin-bottom:.12rem; }
+  #banner { height:130px; }
+}
+/* Change bio image for mobile sites */
+@media screen and (max-width: 595px) {
+    img.bioimage {
+    display: none;
+    }
+    
+    .body-text {
+    width: 95%;
+    }
